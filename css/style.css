@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: georgia, times, serif;
+  background-color: #57652a;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.3em;
+}
+p {
+  margin-bottom: 1.6em;
+}
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  background: #3f2432;
+  background: -moz-linear-gradient(left, #3f2432 0%, #8c4f6f 100%);
+  background: -webkit-linear-gradient(left, #3f2432 0%, #8c4f6f 100%);
+  background: linear-gradient(to right, #3f2432 0%, #8c4f6f 100%);
+  color: white;
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  border-bottom: 3px solid #155765;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0 auto;
+  padding-left: 8px;
+  letter-spacing: 13px;
+  font-size: 1.2em;
+  text-shadow: 4px 4px #155765;
+  font-style: oblique;
+  margin-right: 35px;
+}
+.slogan {
+  padding-left: 30px;
+  font-style: oblique;
+}
+
+/* .menu-icon {
+  display: none;
+} */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  /* para que los elementos del menu se muestren uno al lado del otro */
+}
+.navigation ul li a {
+  display: block;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background-color: #155765;
+  color: #ab9353;
+  transition: all 0.4s linear;
+}
+
+/* .left {
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+.right1 {
+  margin-right: -10px;
+  padding-right: 0px;
+  padding-left: 100px;
+}
+
+.right2 {
+  margin-left: -10px;
+  padding-left: 40px;
+  margin-right: 5px;
+} */
+
+/* Main */
+
+.main {
+  height: 100%;
+  padding-top: 18rem;
+}
+
+/* Footer */
+
+.footer {
+  background: #8c4f6f;
+  background: -moz-linear-gradient(left, #8c4f6f 0%, #3f2432 100%);
+  background: -webkit-linear-gradient(left, #8c4f6f 0%, #3f2432 100%);
+  background: linear-gradient(to right, #8c4f6f 0%, #3f2432 100%);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+  border-top: 5px solid #155765;
+  /* padding-right: 20px; */
+}
+
+.footer ul li {
+  display: inline-block;
+  /* para que los elementos del menu se muestren uno al lado del otro */
+  list-style: none;
+  padding: 0;
+}
+.footer ul li a {
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+}
+.footer p {
+  padding-top: 15px;
+  color: #155765;
+  font-family: times, "Times New Roman";
+  font-weight: 20;
+}
+
+.form li {
+  list-style-type: none;
+}
+
+i {
+  padding-right: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+   /* hasta un width de 768px aparecera nuestro btn hamburguesa y los 
+   enlaces se mostraran  uno debajo del otro si hacemos click, clase show  */
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+  .navigation {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navigation ul {
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: block;
+  }
+  .navigation ul li {
+    display: block;
+    background-color: #8c4f6f;
+    /* para que los elementos de lista usen todo el ancho completo */
+  }
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+  }
+
+  .navigation ul li a:hover {
+    background-color: rgb(5, 167, 167);
+    color: black;
+    transition: all 0.4s linear;
+  }
+}
+
+@media only screen and (max-width: 768px)
